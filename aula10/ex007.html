@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9c9c, #922b2b);
+            color: black;
+            font: normal 20px Arial;
+            line-height: 40px;
+        }
+
+        input {
+            width: 200px;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 20px;
+        }
+
+        #tn1, #tn2 {
+            text-align: center;
+        }
+
+        div {
+            margin: 10px;
+            padding: 10px 20px;
+            color: white;
+            font: bold 23px sans-serif;
+            width: fit-content;
+            border-radius: 5px;
+            text-shadow: 5px 10px 10px #000000b0;
+            background-color: #922b2b;
+        }
+
+        #destaque {
+            color: #d1b40f;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Somando Valores</h1>
+    <input type="text" id="tn1" name="n1">
+    +
+    <input type="text" id="tn2" name="n2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="sum">Resultado da soma</div>
+
+    <script>
+        function somar() {
+            var num1 = window.document.getElementById('tn1')
+            var num2 = window.document.getElementById('tn2')
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var sum = window.document.getElementById('sum')
+            var result = n1 + n2
+            sum.innerHTML = `O resultado de ${n1} mais ${n2} é: <strong id='destaque'>${result}</strong>`
+        }
+    </script>
+</body>
+</html>

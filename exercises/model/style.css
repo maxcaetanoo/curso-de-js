@@ -1,0 +1,31 @@
+body {
+    background-color: #4b6fd3;
+}
+
+header {
+    padding: 0px 0px 50px;
+    text-align: center;
+    font: bold 28px serif;
+    color: white;
+    text-shadow: 0px 1px 5px #00000075;
+}
+
+main {
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px #00000075;
+}
+
+div {
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font: 700 18px Arial, sans-serif;
+    color: white;
+}

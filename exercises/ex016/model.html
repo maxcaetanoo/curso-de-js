@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Vamos Contar</h1>
+    </header>
+    <main>
+        <div id="content">
+            <p>
+                <label for="init">Inicio</label>
+                <input type="number" name="init" id="init">
+            </p>
+            <p>
+                <label for="end">Fim</label>
+                <input type="number" name="end" id="end">
+            </p>
+            <p>
+                <label for="step">Passo</label>
+                <input type="number" name="step" id="step">
+            </p>
+            <input type="button" id="btn" value="Contar" onclick="cont()">
+        </div>
+        <div id="res">Aguardando valores para contagem...</div>
+    </main>
+    <footer>
+        <p>&copy; MaxCaetanoo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
